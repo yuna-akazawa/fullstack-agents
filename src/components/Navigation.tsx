@@ -1,0 +1,24 @@
+import React from 'react';
+import './Navigation.css';
+import logo from '../assets/logo.svg';
+
+const Navigation: React.FC = () => {
+  return (
+    <nav className="navigation">
+      <div className="nav-container">
+        <div className="logo">
+          <img src={logo} alt="Full Stack Agents Logo" className="logo-icon" />
+          <span>Full Stack Agents</span>
+        </div>
+        <button
+          className="cta-button nav-cta"
+          data-tally-open="Np6GYG"
+        >
+          Get your free plan
+        </button>
+      </div>
+    </nav>
+  );
+};
+
+export default Navigation;

@@ -1,38 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #000000;
+  --primary-hover: #333333;
+  --accent-color: #000000;
+  --text-dark: #000000;
+  --text-gray: #4a4a4a;
+  --text-light: #666666;
+  --bg-cream: #f5f3ed;
+  --bg-light: #faf9f7;
+  --bg-white: #ffffff;
+  --bg-dark: #000000;
+  --border-light: #e8e6e0;
+  --border-dark: #000000;
+  --max-width: 1200px;
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-dark);
+  line-height: 1.6;
+  background: var(--bg-cream);
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.cta-button {
+  background: var(--primary-color);
   color: white;
+  border: 1px solid var(--primary-color);
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
 
-.App-link {
-  color: #61dafb;
+.cta-button:hover {
+  background: var(--primary-hover);
+  border-color: var(--primary-hover);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cta-button.secondary {
+  background: transparent;
+  color: var(--text-dark);
+  border: 1px solid var(--border-light);
+}
+
+.cta-button.secondary:hover {
+  background: var(--bg-light);
+  border-color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+  .cta-button {
+    padding: 12px 20px;
+    font-size: 14px;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+/* Style the Tally form branding to be less prominent */
+.tally-popup iframe {
+  --tally-brand-color: #cccccc !important;
+}
+
+/* Make the "Made with Tally" text smaller and lighter */
+[data-testid="form-footer"] {
+  font-size: 10px !important;
+  opacity: 0.5 !important;
+}
+
+/* Additional Tally form footer styling */
+.tally-form-footer,
+.tally-branding {
+  font-size: 10px !important;
+  color: #cccccc !important;
+  opacity: 0.5 !important;
 }
