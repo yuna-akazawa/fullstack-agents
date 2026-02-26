@@ -60,7 +60,7 @@ const SectorCards: React.FC = () => {
                 <h3 className="sector-title">{sector.title}</h3>
               </div>
               <div className="sector-reality">
-                <strong>The Reality:</strong> <span dangerouslySetInnerHTML={{ __html: sector.reality }} />
+                <span className="reality-emoji">👉</span> <span dangerouslySetInnerHTML={{ __html: sector.reality }} />
               </div>
               <h4 className="sector-headline">{sector.headline}</h4>
               <ul className="sector-bullets">
