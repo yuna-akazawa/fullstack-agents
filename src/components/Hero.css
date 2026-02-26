@@ -64,39 +64,50 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto 40px;
 }
 
 .stat-card {
-  text-align: center;
-  padding: 40px 32px;
-  background: #e8e2d5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 32px;
+  background: white;
   border: none;
-  border-radius: 12px;
-  transition: all 0.2s ease;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  min-height: 200px;
 }
 
-.stat-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+.stat-icon {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  margin-bottom: 24px;
+}
+
+.stat-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .stat-value {
-  font-size: 32px;
-  font-weight: 800;
+  font-size: 48px;
+  font-weight: 700;
   color: var(--text-dark);
-  margin-bottom: 12px;
+  line-height: 1;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 }
 
 .stat-label {
-  font-size: 14px;
-  color: var(--text-dark);
-  font-weight: 500;
-  letter-spacing: 0.02em;
+  font-size: 16px;
+  color: #6b7280;
+  font-weight: 400;
+  line-height: 1.4;
   font-family: Georgia, 'Times New Roman', serif;
-  opacity: 0.9;
 }
 
 .hero-visual {

@@ -1,13 +1,13 @@
 import React from 'react';
 import './AgitateSection.css';
-import discussIcon from '../assets/graphic-discuss.svg';
-import buildIcon from '../assets/graphic-build.svg';
-import deployIcon from '../assets/graphic-deploy.svg';
+import chatIcon from '../assets/icon-chat.svg';
+import buildIcon from '../assets/icon-build.png';
+import deployIcon from '../assets/icon-deploy.png';
 
 const AgitateSection: React.FC = () => {
   const steps = [
     {
-      icon: discussIcon,
+      icon: chatIcon,
       title: 'Listen & Audit',
       description: 'We review your current operations and map out your messiest daily workflows.'
     },

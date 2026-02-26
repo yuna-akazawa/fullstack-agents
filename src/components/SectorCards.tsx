@@ -12,7 +12,7 @@ const SectorCards: React.FC = () => {
   const sectors: Sector[] = [
     {
       title: 'Dental & MedSpa',
-      reality: '<span class="stat-underline">35% of patient calls go unanswered</span>, and <span class="stat-underline">85% of those callers</span> will hang up and immediately call a competitor.',
+      reality: '<span class="stat-bold">35% of patient calls go unanswered</span>, and <span class="stat-bold">85% of those callers</span> will hang up and call a competitor immediately.',
       headline: 'The "Zero Missed Patients" Desk',
       bullets: [
         '24/7 HIPAA-compliant AI Voice Receptionist.',
@@ -22,7 +22,7 @@ const SectorCards: React.FC = () => {
     },
     {
       title: 'Real Estate & Leasing',
-      reality: '<span class="stat-underline">78% of buyers</span> choose the first agent who responds. Wait just 30 minutes to reply, and your chance of converting <span class="stat-underline">drops by 400%</span>.',
+      reality: '<span class="stat-bold">78% of buyers</span> choose the first agent who responds. Wait 30 minutes to reply, and your chance of converting <span class="stat-bold">drops by 400%</span>.',
       headline: 'The Instant "Speed-to-Lead" Engine',
       bullets: [
         'Intercepts Zillow & website leads instantly, 24/7.',
@@ -32,7 +32,7 @@ const SectorCards: React.FC = () => {
     },
     {
       title: 'Home Services & HVAC',
-      reality: '<span class="stat-underline">27% of all home service calls go unanswered</span>. Every missed emergency call is an average of <span class="stat-underline">$300 to $1,200</span> walking out the door.',
+      reality: '<span class="stat-bold">27% of home service calls go unanswered</span>. Every missed emergency call is an average of <span class="stat-bold">$300 to $1,200</span> lost revenue.',
       headline: 'The 24/7 Emergency Dispatcher',
       bullets: [
         'Never miss a midnight burst pipe or broken AC call.',
@@ -47,10 +47,10 @@ const SectorCards: React.FC = () => {
       <div className="sector-container">
         <div className="sector-header-section">
           <h2 className="sector-main-title">
-            Adaptable AI Engines for High-Volume Services
+            Adaptable AI Agents for High-Volume Services
           </h2>
           <p className="sector-subtitle">
-            We don't force you into a new platform. We custom-code AI to fit seamlessly into the tools you already use.
+            We don't force you into a new platform. We custom-code AI agents to fit seamlessly into the tools you already use.
           </p>
         </div>
         <div className="sector-grid">
