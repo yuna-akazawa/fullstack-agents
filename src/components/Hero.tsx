@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="headline">
-            Tell us your needs. <span className="underline-text">We build custom AI</span> to automate your workflows.
+            Tell us your needs. <span className="underline-text">We build custom AI agents</span> to automate your workflows.
           </h1>
           <p className="subheadline">
             Want to use AI but not sure where to start? Don't get left behind. We design
