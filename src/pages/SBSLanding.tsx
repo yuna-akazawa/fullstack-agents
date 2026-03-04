@@ -1,6 +1,7 @@
 import React from 'react';
 import './SBSLanding.css';
-import logo from '../assets/logo.svg';
+import logo from '../assets/logo-white.svg';
+import visionGraphic from '../assets/vision-graphic-new.svg';
 
 const SBSLanding: React.FC = () => {
   return (
@@ -18,12 +19,9 @@ const SBSLanding: React.FC = () => {
       {/* Hero Section */}
       <section className="sbs-hero">
         <div className="sbs-container">
-          <h1 className="sbs-headline">Exclusive Operations Audit for the SBS Community</h1>
+          <h1 className="sbs-headline">Free Operations Audit for the SBS Community</h1>
           <p className="sbs-blurb">
-            We are a boutique tech partner for New York's local practices, clinics, and service businesses.
-          </p>
-          <p className="sbs-subheadline">
-            We build the behind-the-scenes systems that make your client experience amazing and give your team their time back.
+            We are a NY-based tech partner specializing in custom AI solutions that streamline workflows for local businesses.
           </p>
         </div>
       </section>
@@ -31,47 +29,61 @@ const SBSLanding: React.FC = () => {
       {/* Vision Section */}
       <section className="sbs-vision">
         <div className="sbs-container">
-          <h2>Grow your business without losing that personal touch.</h2>
-          <p>
-            As a fellow SBS parent and local business owner right here in the city, I know how hard your team works to take care of your clients.
-            As your business grows, your staff's time becomes your most valuable asset. Their talents are best spent face to face with the people
-            you serve instead of managing appointment followups, navigating schedule changes, or playing phone tag with new inquiries.
-          </p>
+          <div className="sbs-vision-card">
+            <h2>Let us handle the tech, so you can focus on what matters.</h2>
+            <p>
+              Smart automation can reduce operational costs by 30% while freeing up 10+ hours weekly for your team.
+              Stop paying for overtime on repetitive tasks. Let AI handle scheduling, follow-ups, and client communications
+              so your staff can focus on revenue-generating activities.
+            </p>
+            <a
+              href="https://calendly.com/yuna-akazawa-aiy3/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="sbs-cta-button"
+              style={{ marginTop: '40px', display: 'inline-block' }}
+            >
+              Book your free audit
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Solution Section */}
       <section className="sbs-solution">
         <div className="sbs-container">
-          <h2>The Complimentary SBS Operations Audit</h2>
-          <p>
-            Fullstack Agents builds custom digital systems that run quietly in the background to make your day easier.
-            To support our school community, we are offering a complimentary 30-minute baseline Operations Audit for all SBS families.
-          </p>
-          <p>
-            On this quick and casual introductory call, we can explore exactly how tailored technology can help your business:
-          </p>
-          <ul className="sbs-benefits">
-            <li>Provide a smooth booking experience that securely captures and qualifies web inquiries after hours.</li>
-            <li>Automatically manage your waitlist to make sure your calendar stays full.</li>
-            <li>Run continuous and personalized check-ins between visits so your clients always feel supported.</li>
-          </ul>
+          <div className="sbs-solution-grid">
+            <div className="sbs-solution-text">
+              <h2>Complimentary SBS Operations Audit</h2>
+              <p>
+                We build custom AI systems that automate your daily operations—quietly and efficiently.
+              </p>
+              <p>
+                <strong>For SBS families only:</strong> Get a free 30-minute audit to discover how AI can transform your business.
+              </p>
+              <a
+                href="https://calendly.com/yuna-akazawa-aiy3/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sbs-text-link"
+              >
+                Book your free audit
+              </a>
+            </div>
+            <div className="sbs-benefits-card">
+              <ul className="sbs-benefits">
+                <li>24/7 automated appointment booking & rescheduling</li>
+                <li>Smart invoice generation & payment reminders</li>
+                <li>Instant customer support chatbot for FAQs</li>
+                <li>Automated review collection & reputation management</li>
+                <li>Personalized email & SMS marketing campaigns</li>
+                <li>Inventory tracking & automatic reorder alerts</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="sbs-cta">
-        <div className="sbs-container">
-          <a
-            href="https://calendly.com/yuna-akazawa-aiy3/30min"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="sbs-cta-button"
-          >
-            Book Your Complimentary Audit
-          </a>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="sbs-footer">
