@@ -1,22 +1,19 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Navigation from './components/Navigation';
-import Hero from './components/Hero';
-import AgitateSection from './components/AgitateSection';
-import SectorCards from './components/SectorCards';
-import FinalCTA from './components/FinalCTA';
-import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import SBSLanding from './pages/SBSLanding';
 
 function App() {
   return (
-    <div className="App">
-      <Navigation />
-      <Hero />
-      <SectorCards />
-      <AgitateSection />
-      <FinalCTA />
-      <Footer />
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/sbs" element={<SBSLanding />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
