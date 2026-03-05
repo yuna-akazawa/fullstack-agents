@@ -1,6 +1,6 @@
 import React from 'react';
 import './SBSLanding.css';
-import logo from '../assets/logo-white.svg';
+import logo from '../assets/logo.svg';
 import visionGraphic from '../assets/vision-graphic-new.svg';
 
 const SBSLanding: React.FC = () => {
@@ -11,7 +11,7 @@ const SBSLanding: React.FC = () => {
         <div className="sbs-nav-container">
           <a href="/" className="sbs-logo">
             <img src={logo} alt="Full Stack Agents Logo" className="sbs-logo-icon" />
-            <span>Full Stack Agents</span>
+            <span>FULLSTACK AGENTS</span>
           </a>
         </div>
       </nav>
@@ -19,9 +19,9 @@ const SBSLanding: React.FC = () => {
       {/* Hero Section */}
       <section className="sbs-hero">
         <div className="sbs-container">
-          <h1 className="sbs-headline">Free Operations Audit for the SBS Community</h1>
+          <h1 className="sbs-headline"><span style={{ textDecoration: 'underline' }}>Free Operations Audit</span> for the SBS Community</h1>
           <p className="sbs-blurb">
-            We are a NY-based tech partner specializing in custom AI solutions that streamline workflows for local businesses.
+            We are a NY-based tech partner specializing in <strong>custom AI solutions</strong> that streamline workflows for local businesses.
           </p>
         </div>
       </section>
@@ -32,20 +32,23 @@ const SBSLanding: React.FC = () => {
           <div className="sbs-vision-card">
             <h2>Let us handle the tech, so you can focus on what matters.</h2>
             <p>
-              Smart automation can reduce operational costs by 30% while freeing up 10+ hours weekly for your team.
-              Stop paying for overtime on repetitive tasks. Let AI handle scheduling, follow-ups, and client communications
-              so your staff can focus on revenue-generating activities.
+              Did you know that companies using AI automation report up to <span style={{ textDecoration: 'underline' }}>86% cost reduction</span> and get $3.70 ROI for every dollar spent?
+              We understand that not every AI solution fits every business. At Fullstack Agents, we listen to your unique challenges and goals,
+              then <span style={{ textDecoration: 'underline' }}>build custom automation tools</span> tailored specifically to your needs.
             </p>
             <a
               href="https://calendly.com/yuna-akazawa-aiy3/30min"
               target="_blank"
               rel="noopener noreferrer"
               className="sbs-cta-button"
-              style={{ marginTop: '40px', display: 'inline-block' }}
+              style={{ marginTop: '24px', display: 'inline-block' }}
             >
               Book your free audit
             </a>
           </div>
+          <p className="sbs-disclaimer" style={{ marginTop: '20px', fontSize: '12px', color: '#6b7280', fontStyle: 'italic' }}>
+            *Based on McKinsey's 2024 State of AI report and enterprise automation studies
+          </p>
         </div>
       </section>
 
@@ -54,9 +57,9 @@ const SBSLanding: React.FC = () => {
         <div className="sbs-container">
           <div className="sbs-solution-grid">
             <div className="sbs-solution-text">
-              <h2>Complimentary SBS Operations Audit</h2>
+              <h2>Complimentary Operations Audit</h2>
               <p>
-                We build custom AI systems that automate your daily operations—quietly and efficiently.
+                Want to adopt AI but not sure where to start? Have specific business goals you want to achieve? Start here.
               </p>
               <p>
                 <strong>For SBS families only:</strong> Get a free 30-minute audit to discover how AI can transform your business.

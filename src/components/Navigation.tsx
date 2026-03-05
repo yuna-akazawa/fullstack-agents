@@ -8,7 +8,7 @@ const Navigation: React.FC = () => {
       <div className="nav-container">
         <div className="logo">
           <img src={logo} alt="Full Stack Agents Logo" className="logo-icon" />
-          <span>Full Stack Agents</span>
+          <span>FULLSTACK AGENTS</span>
         </div>
         <button
           className="cta-button nav-cta"
