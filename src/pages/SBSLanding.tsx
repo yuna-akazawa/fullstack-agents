@@ -1,7 +1,6 @@
 import React from 'react';
 import './SBSLanding.css';
 import logo from '../assets/logo.svg';
-import visionGraphic from '../assets/vision-graphic-new.svg';
 
 const SBSLanding: React.FC = () => {
   return (
