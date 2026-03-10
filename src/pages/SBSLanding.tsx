@@ -18,7 +18,7 @@ const SBSLanding: React.FC = () => {
       {/* Hero Section */}
       <section className="sbs-hero">
         <div className="sbs-container">
-          <h1 className="sbs-headline"><span style={{ textDecoration: 'underline' }}>Free Operations Audit</span> for the SBS Community</h1>
+          <h1 className="sbs-headline"><span style={{ textDecoration: 'underline' }}>Free Consultation</span> for SBS Community</h1>
           <p className="sbs-blurb">
             We are a NY-based tech partner specializing in <strong>custom AI solutions</strong> that streamline workflows for local businesses.
           </p>
