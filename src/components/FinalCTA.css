@@ -24,7 +24,7 @@
 .final-container {
   max-width: 700px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 32px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -76,7 +76,7 @@
   }
 
   .final-container {
-    padding: 0 16px;
+    padding: 0 24px;
   }
 
   .final-container h2 {

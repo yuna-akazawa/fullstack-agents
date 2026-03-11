@@ -2,7 +2,7 @@ import React from 'react';
 import Navigation from '../components/Navigation';
 import Hero from '../components/Hero';
 import AgitateSection from '../components/AgitateSection';
-import SectorCards from '../components/SectorCards';
+import InteractiveTabbedShowcase from '../components/InteractiveTabbedShowcase';
 import FinalCTA from '../components/FinalCTA';
 import Footer from '../components/Footer';
 
@@ -11,7 +11,7 @@ function HomePage() {
     <>
       <Navigation />
       <Hero />
-      <SectorCards />
+      <InteractiveTabbedShowcase />
       <AgitateSection />
       <FinalCTA />
       <Footer />
