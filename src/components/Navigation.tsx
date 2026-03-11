@@ -7,7 +7,7 @@ const Navigation: React.FC = () => {
     <nav className="navigation">
       <div className="nav-container">
         <div className="logo">
-          <img src={logo} alt="Full Stack Agents Logo" className="logo-icon" />
+          <img src={logo} alt="Fullstack Agents Logo" className="logo-icon" />
           <span>FULLSTACK AGENTS</span>
         </div>
         <button

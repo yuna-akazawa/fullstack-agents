@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer-container">
         <p className="copyright">
-          © {currentYear} Full Stack Agents. All rights reserved.
+          © {currentYear} Fullstack Agents. All rights reserved.
         </p>
       </div>
     </footer>

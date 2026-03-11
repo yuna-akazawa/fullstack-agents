@@ -9,7 +9,7 @@ const SBSLanding: React.FC = () => {
       <nav className="sbs-navigation">
         <div className="sbs-nav-container">
           <a href="/" className="sbs-logo">
-            <img src={logo} alt="Full Stack Agents Logo" className="sbs-logo-icon" />
+            <img src={logo} alt="Fullstack Agents Logo" className="sbs-logo-icon" />
             <span>FULLSTACK AGENTS</span>
           </a>
         </div>
