@@ -136,7 +136,7 @@ const InteractiveTabbedShowcase: React.FC = () => {
 
   return (
     <section style={{
-      padding: windowWidth >= 768 ? '96px 32px' : '96px 24px',
+      padding: windowWidth >= 768 ? '96px 32px' : '96px 16px',
       backgroundColor: 'white'
     }}>
       <div style={{
@@ -149,7 +149,7 @@ const InteractiveTabbedShowcase: React.FC = () => {
           marginBottom: '64px'
         }}>
           <h2 style={{
-            fontSize: '42px',
+            fontSize: windowWidth < 768 ? '36px' : '42px',
             fontWeight: 800,
             color: '#111827',
             letterSpacing: '-0.02em',
@@ -159,7 +159,7 @@ const InteractiveTabbedShowcase: React.FC = () => {
             Adaptable AI Agents for High-Volume Services
           </h2>
           <p style={{
-            fontSize: '19px',
+            fontSize: windowWidth < 768 ? '16px' : '19px',
             color: 'var(--text-dark)',
             maxWidth: '768px',
             margin: '0 auto',
@@ -178,7 +178,7 @@ const InteractiveTabbedShowcase: React.FC = () => {
           justifyContent: 'center',
           marginBottom: windowWidth < 768 ? '40px' : '64px',
           maxWidth: '100%',
-          padding: '0 16px'
+          padding: windowWidth < 768 ? '0' : '0 16px'
         }}>
           <div style={{
             display: 'inline-flex',
