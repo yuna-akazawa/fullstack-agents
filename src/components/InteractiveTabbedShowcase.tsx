@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import smsDentalImage from '../assets/sms-dental.png';
 import smsRealtorImage from '../assets/sms-realtor.png';
 import smsHvacImage from '../assets/sms-hvac.png';
@@ -33,8 +34,24 @@ interface TabContent {
 }
 
 const InteractiveTabbedShowcase: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<string>('dental');
+  const [searchParams] = useSearchParams();
+  const tabParam = searchParams.get('tab');
+
+  const [activeTab, setActiveTab] = useState<string>(() => {
+    // Check URL parameter for initial tab
+    if (tabParam === 'realestate' || tabParam === 'hvac') {
+      return tabParam;
+    }
+    return 'dental'; // Default tab
+  });
   const [windowWidth, setWindowWidth] = useState<number>(typeof window !== 'undefined' ? window.innerWidth : 1024);
+
+  // Update tab when URL parameter changes
+  useEffect(() => {
+    if (tabParam === 'realestate' || tabParam === 'hvac' || tabParam === 'dental') {
+      setActiveTab(tabParam);
+    }
+  }, [tabParam]);
 
   useEffect(() => {
     const handleResize = () => {
